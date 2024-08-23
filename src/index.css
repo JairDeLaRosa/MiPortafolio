@@ -1,0 +1,27 @@
+body{
+  background-color: #1A1A1A;
+  color: #FFC774;
+}
+
+.nav-pills .nav-link.active {  
+  background-color: #8DD6FF; /* Cambia esto al color que desees */  
+  color: #fff; /* Color del texto cuando está activo */  
+}  
+.nav-link{
+  transition: all 0.2s;
+}
+/* Estilo para el enlace enlazado */  
+.nav-pills .nav-link:hover {  
+ font-size: 17px;
+  font-weight: 600;
+}  
+
+nav{
+  box-shadow: 2px 2px 5px rgba(68, 65, 65, 0.3);
+}
+.home{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
