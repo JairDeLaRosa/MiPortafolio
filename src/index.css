@@ -1,10 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=SUSE:wght@100..800&display=swap');
+
 body{
-  background-color: #1A1A1A;
-  color: #FFC774;
+  font-family: "SUSE", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-pills .nav-link.active {  
-  background-color: #8DD6FF; /* Cambia esto al color que desees */  
+  background-color: #58bbf5; /* Cambia esto al color que desees */  
   color: #fff; /* Color del texto cuando está activo */  
 }  
 .nav-link{
@@ -19,9 +26,29 @@ body{
 nav{
   box-shadow: 2px 2px 5px rgba(68, 65, 65, 0.3);
 }
+
 .home{
-  display: flex;
+display: flex;
   justify-content: space-between;
   padding-left: 10vw;
   padding-right: 10vw;
+  background-color: #58bbf5;
+  height: 90vh;
+  left: 0;
+}
+.foto{
+  width: 20vw;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+.info{
+  width: 50vw;
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

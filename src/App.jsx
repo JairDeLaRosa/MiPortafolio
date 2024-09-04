@@ -4,26 +4,37 @@ import { Nav } from "./Nav";
 
 const App = () => {
   return (
-    <div className="container">
+    
+    <>
       <Nav />
       <div
         data-bs-spy="scroll"
         data-bs-target="#navbar-example2"
         data-bs-root-margin="0px 0px -40%"
-        style={{ marginTop: "75px" }}
+        style={{ marginTop: "78px", }}
         data-bs-smooth-scroll="true"
-        class="scrollspy-example p-3 rounded-2"
+        class=""
         tabindex="10"
       >
         <div className="home" id="scrollspyHeading1">
-          <div>
-            <h2 class="animate__animated animate__bounce">
-              Hello <br />
-              mi name is Jair De La Rosa
+          <img src="./Elemento1.png" alt="Elemento1" style={{position: "absolute", width:"10vw", marginLeft: "40vw", marginTop: "13vh"}}/>
+          <div className="info">
+            <h2
+              class="animate__animated animate__bounce "
+              style={{ fontSize: "70px" }}
+            ><em>-Hello
+            <br />
+            mi <u>name</u>  is <br />{" "}</em>
+              
+              <span style={{ color: "#4AA1FF" }}>
+                <i class="fa fa-code" aria-hidden="true">
+                 <code>&lt;Jair De La Rosa&gt;</code>
+                </i>{" "}
+              </span>
             </h2>
           </div>
-          <div>
-            <img src="./miFoto3.png" alt="Mi foto" style={{width: "230px"}}/>
+          <div className="foto">
+            <img src="./miFoto3.png" alt="Mi foto" style={{ width: "17vw", borderRadius: "50% 0 50%", backgroundColor: "#FFBD7B"}} />
           </div>
         </div>
         <h4 id="scrollspyHeading2">Second heading</h4>
@@ -86,8 +97,10 @@ const App = () => {
           quam voluptatem consectetur assumenda omnis nesciunt. Dicta voluptatum
           laboriosam laudantium non soluta reprehenderit omnis aliquam.
         </p>
-        <h4 id="scrollspyHeading3" class="animate__animated animate__bounce">Third heading</h4>
-        <h1 >An animated element</h1>
+        <h4 id="scrollspyHeading3" class="animate__animated animate__bounce">
+          Third heading
+        </h4>
+        <h1>An animated element</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores,
           atque quisquam! Molestias reprehenderit corrupti minima dolorem
@@ -147,7 +160,7 @@ const App = () => {
           adipisci iure ullam, corrupti totam enim?
         </p>
       </div>
-    </div>
+    </>
   );
 };
 
